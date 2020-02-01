@@ -1,14 +1,14 @@
 {
     "name": "mercadobitcoin-client-v3",
     "description": "Mercado Bitcoin API client (TAPI v3 and open API)",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "homepage": "https://github.com/h3nr1ke/mercadobitcoin",
     "author": {
         "name": "Henrique Deodato",
         "email": "h3nr1ke@gmail.com"
     },
     "main": "mercadobitcoin-client-v3",
-    "files": ["mercadobitcoin-v3.js"],
+    "files": ["mercadobitcoin-client-v3.js"],
     "repository": {
         "type": "git",
         "url": "git://github.com/h3nr1ke/mercadobitcoin.git"
