@@ -3,41 +3,41 @@
 [![license](https://img.shields.io/github/license/macmiranda/mercadobitcoin.svg)](http://spdx.org/licenses/MIT)
 
 # Mercado Bitcoin API client
-[Mercado Bitcoin](https://www.mercadobitcoin.com.br) is a cryptocurrency exchange in Brazil. This module has been forked from marcbasbosa's module and modified to work with v3 of the Trade API.
+[Mercado Bitcoin](https://www.mercadobitcoin.com.br) is a cryptocurrency exchange in Brazil. This module has been forked from [macmiranda's](https://github.com/macmiranda) module and modified to correct new format of open API while keeping the current functions.
 
 ## Install
 
 ```shell
-npm install mercadobitcoin-v3
+npm install mercadobitcoin-client-v3
 ```
 
 ## Usage
 
 There are 2 API endpoints. One for general info (public) and a trade API (require credentials)
 
-### API - [documentation](https://www.mercadobitcoin.com.br/api/)
+### API - [documentation](https://www.mercadobitcoin.com.br/api-doc/)
 
 ```javascript
-var MercadoBitcoin = require('mercadobitcoin-v3').MercadoBitcoin;
+var MercadoBitcoin = require('mercadobitcoin-client-v3').MercadoBitcoin;
 
-// The options for currency are: 'BTC' or 'LTC'
+// The options for currency are: BTC, LTC, BCH, XRP and ETH
 var mb = new MercadoBitcoin();
 
-// Call ticker method to get last price of LTC
-mb.get('ticker','LTC',console.log);
+// Call ticker method to get last price of XRP
+mb.get('ticker','XRP',console.log);
 
 // Fetch the order book for BTC transactions (default)
 mb.get('orderbook', null, console.log);
 ```
 
-### TRADE API - [documentation](https://www.mercadobitcoin.com.br/trade-api/)
+### TRADE API - [documentation](https://www.mercadobitcoin.com.br/trade-api)
 
 Get your credentials at Mercado Bitcoin website
 
 You will need the following info: Chave, Código ([here](https://www.mercadobitcoin.com.br/tapi/configuracoes/)). The PIN that was used in the previous versions is not needed anymore.
 
 ```javascript
-var MercadoBitcoinTrade = require('mercadobitcoin-v3').MercadoBitcoinTrade;
+var MercadoBitcoinTrade = require('mercadobitcoin-client-v3').MercadoBitcoinTrade;
 
 // Credentials
 var config = {  key    : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
@@ -49,7 +49,7 @@ var mbt = new MercadoBitcoinTrade(config);
 // This object contains extra parameters that you might use for some methods:
 var details = {
 //		level: 'INFO' ,
-		coin_pair: 'BRLLTC',
+		coin_pair: 'BRLXRP',
 //		status_list: '[2,3]',
 }
 
