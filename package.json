@@ -1,22 +1,22 @@
 {
-    "name": "mercadobitcoin-v3",
-    "description": "Mercado Bitcoin API client (TAPI v3)",
-    "version": "0.0.5",
-    "homepage": "https://github.com/macmiranda/mercadobitcoin",
+    "name": "mercadobitcoin-client-v3",
+    "description": "Mercado Bitcoin API client (TAPI v3 and open API)",
+    "version": "0.0.1",
+    "homepage": "https://github.com/h3nr1ke/mercadobitcoin",
     "author": {
-        "name": "Marco Aurelio Miranda",
-        "email": "macmiranda@gmail.com"
+        "name": "Henrique Deodato",
+        "email": "h3nr1ke@gmail.com"
     },
-    "main": "mercadobitcoin-v3",
+    "main": "mercadobitcoin-client-v3",
     "files": ["mercadobitcoin-v3.js"],
     "repository": {
         "type": "git",
-        "url": "git://github.com/macmiranda/mercadobitcoin.git"
+        "url": "git://github.com/h3nr1ke/mercadobitcoin.git"
     },
     "bugs": {
-        "url": "https://github.com/macmiranda/mercadobitcoin/issues"
+        "url": "https://github.com/h3nr1ke/mercadobitcoin/issues"
     },
-    "keywords": ["bitcoin", "exchange", "api", "mercadobitcoin"],
+    "keywords": ["bitcoin", "crypto", "exchange", "api", "mercadobitcoin"],
     "dependencies": {
         "unirest": "0.1.1"
     },

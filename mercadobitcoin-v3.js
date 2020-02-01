@@ -14,11 +14,8 @@ var MercadoBitcoin = function () {
 }
 
 MercadoBitcoin.prototype = {
-
   get: function (method, currency, res) {
     if (currency) {this.currency = currency;} 
-    var isLitecoin = currency === 'LTC';
-
     unirest.get(`${ENDPOINT_API}${currency}/${method}`)
     .headers('Accept', 'application/json')
     .end(function (response) {
