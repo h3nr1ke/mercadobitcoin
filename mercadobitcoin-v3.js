@@ -3,7 +3,7 @@ var unirest = require('unirest'),
     qs      = require('querystring');
 
 var BASE_URL		= 'https://www.mercadobitcoin.net',
-    API_PATH	       	= '/api/v1/',
+    API_PATH	       	= '/api/',
     TAPI_PATH	       	= '/tapi/v3/',
     ENDPOINT_API       	= BASE_URL + API_PATH,
     ENDPOINT_TRADE_API 	= BASE_URL + TAPI_PATH;
@@ -19,7 +19,7 @@ MercadoBitcoin.prototype = {
     if (currency) {this.currency = currency;} 
     var isLitecoin = currency === 'LTC';
 
-    unirest.get(ENDPOINT_API + method + (isLitecoin ? '_litecoin' : ''))
+    unirest.get(`${ENDPOINT_API}${currency}/${method}`)
     .headers('Accept', 'application/json')
     .end(function (response) {
       res(JSON.parse(response.raw_body));
