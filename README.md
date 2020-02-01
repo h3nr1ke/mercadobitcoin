@@ -62,4 +62,4 @@ mbt.execute('get_account_info', null, console.log);
 ```
 
 ### Donations are welcome!
-1HEqNnuxpBwJvtxzfT9758mfMVHzGzfWoK
+33c4WSnNiYj8thcmwxzhwPYTKsYt5YKeBa
