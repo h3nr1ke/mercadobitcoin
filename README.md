@@ -1,6 +1,6 @@
-[![npm](https://img.shields.io/npm/v/mercadobitcoin-v3.svg)](https://www.npmjs.com/package/mercadobitcoin-v3)
-[![GitHub issues](https://img.shields.io/github/issues/macmiranda/mercadobitcoin.svg)](https://github.com/macmiranda/mercadobitcoin/issues)
-[![license](https://img.shields.io/github/license/macmiranda/mercadobitcoin.svg)](http://spdx.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/v/mercadobitcoin-client-v3.svg)](https://www.npmjs.com/package/mercadobitcoin-client-v3)
+[![GitHub issues](https://img.shields.io/github/issues/h3nr1ke/mercadobitcoin.svg)](https://github.com/h3nr1ke/mercadobitcoin/issues)
+[![license](https://img.shields.io/github/license/h3nr1ke/mercadobitcoin.svg)](http://spdx.org/licenses/MIT)
 
 # Mercado Bitcoin API client
 [Mercado Bitcoin](https://www.mercadobitcoin.com.br) is a cryptocurrency exchange in Brazil. This module has been forked from [macmiranda's](https://github.com/macmiranda) module and modified to correct new format of open API while keeping the current functions.
